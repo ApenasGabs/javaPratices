@@ -3,7 +3,8 @@ package module10;
 import java.util.Scanner;
 
 public class Exercise1 {
-	// Escreva um algoritmo em Java, que leia 2 números inteiros via teclado,
+	// Escreva um algoritmo em Java,
+	// que leia 2 números inteiros via teclado,
 	// onde o primeiro número deve ser menor do que o segundo número. Caso
 	// contrário,
 	// deve ser exibida uma mensagem na tela informando

@@ -1,4 +1,5 @@
 package module8;
+
 import java.util.Scanner;
 
 public class Exercise2 {
@@ -15,8 +16,9 @@ public class Exercise2 {
 		System.out.println("Digite a segunda nota");
 		fourthValue = inputValues.nextFloat();
 
-		finalMedia = (firstValue+ secondValue + thirdValue +fourthValue)/ 4;
+		finalMedia = (firstValue + secondValue + thirdValue + fourthValue) / 4;
 		System.out.println(finalMedia);
+		inputValues.close();
 	}
 
 }
