@@ -23,8 +23,8 @@ public class Exercise1 {
 			switch (chosenOption) {
 				case 1:
 						System.out.print("Digite o nome: ");
-						String nome = inputValues.nextLine();
-						clientsQueue.add(nome);
+						String name = inputValues.nextLine();
+						clientsQueue.add(name);
 						System.out.println("\nFila: ");
 						System.out.println(clientsQueue);
 						System.out.println("\nCliente Adicionado!");
