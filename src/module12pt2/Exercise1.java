@@ -8,9 +8,9 @@ public class Exercise1 {
 
 	public static void main(String[] args) {
 		Scanner inputValues = new Scanner(System.in);
-		Queue<String>  clientsQueue = new LinkedList<String>();
+		Queue<String> clientsQueue = new LinkedList<String>();
 		int chosenOption;
-		do{
+		do {
 			System.out.println("\n*******************************************************");
 			System.out.println("1: Adicionar um novo Cliente na fila");
 			System.out.println("2: Listar todos os Clientes na fila");
@@ -22,43 +22,43 @@ public class Exercise1 {
 			inputValues.nextLine();
 			switch (chosenOption) {
 				case 1:
-						System.out.print("Digite o nome: ");
-						String name = inputValues.nextLine();
-						clientsQueue.add(name);
-						System.out.println("\nFila: ");
-						System.out.println(clientsQueue);
-						System.out.println("\nCliente Adicionado!");
-						break;
+					System.out.print("Digite o nome: ");
+					String name = inputValues.nextLine();
+					clientsQueue.add(name);
+					System.out.println("\nFila: ");
+					System.out.println(clientsQueue);
+					System.out.println("\nCliente Adicionado!");
+					break;
 				case 2:
-						if (clientsQueue.isEmpty()) {
-								System.out.println("A Fila está vazia!");
-						} else {
-								System.out.println("Lista de Clientes na Fila: ");
-								for (String client : clientsQueue) {
-										System.out.println(client);
-								}
+					if (clientsQueue.isEmpty()) {
+						System.out.println("A Fila está vazia!");
+					} else {
+						System.out.println("Lista de Clientes na Fila: ");
+						for (String client : clientsQueue) {
+							System.out.println(client);
 						}
-						break;
+					}
+					break;
 				case 3:
-						if (clientsQueue.isEmpty()) {
-								System.out.println("A Fila está vazia!");
-						} else {
-								System.out.println("Fila: ");
-								clientsQueue.poll();
-								System.out.println(clientsQueue);
-								System.out.println("\nO Cliente foi Chamado!");
-						}
-						break;
+					if (clientsQueue.isEmpty()) {
+						System.out.println("A Fila está vazia!");
+					} else {
+						System.out.println("Fila: ");
+						clientsQueue.poll();
+						System.out.println(clientsQueue);
+						System.out.println("\nO Cliente foi Chamado!");
+					}
+					break;
 				case 0:
-						System.out.println("\nPrograma Finalizado!");
-						break;
+					System.out.println("\nPrograma Finalizado!");
+					break;
 				default:
-						System.out.println("Opção Inválida!");
-		}
-			
-		}while(	chosenOption!= 0 );
+					System.out.println("Opção Inválida!");
+			}
+
+		} while (chosenOption != 0);
 		inputValues.close();
-		
+
 	}
 
 }
